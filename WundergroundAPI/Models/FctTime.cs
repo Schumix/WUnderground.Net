@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CGurus.Weather.WundergroundAPI.Models
 {
@@ -27,7 +23,7 @@ namespace CGurus.Weather.WundergroundAPI.Models
         public string Pretty { get; set; }
         public Int16? Sec { get; set; }
         public string Tz { get; set; }
-        public DayOfWeek WeekDay_Name { get; set; }
+		public string WeekDay_Name { get; set; }
         public string Weekday_Name_Abbrev { get; set; }
         public string Weekday_Name_Night { get; set; }
         public string Weekday_Name_Night_UnLang { get; set; }

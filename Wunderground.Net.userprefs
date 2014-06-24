@@ -1,0 +1,39 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="WundergroundAPI/WApi.cs">
+    <Files>
+      <File FileName="WundergroundAPI/WApi.cs" Line="100" Column="10" />
+      <File FileName="WundergroundAPI/packages.config" Line="1" Column="1" />
+      <File FileName="WundergroundAPI/Properties/AssemblyInfo.cs" Line="1" Column="1" />
+      <File FileName="WundergroundAPI/Models/Accumulation.cs" Line="1" Column="14" />
+      <File FileName="WundergroundAPI/Models/Alert.cs" Line="1" Column="14" />
+      <File FileName="WundergroundAPI/Models/AlertData.cs" Line="1" Column="14" />
+      <File FileName="WundergroundAPI/Models/Date.cs" Line="1" Column="14" />
+      <File FileName="WundergroundAPI/Models/Enums.cs" Line="1" Column="14" />
+      <File FileName="WundergroundAPI/Models/FctTime.cs" Line="1" Column="14" />
+      <File FileName="WundergroundAPI/Models/Forecast.cs" Line="1" Column="14" />
+      <File FileName="WundergroundAPI/Models/ForecastData.cs" Line="1" Column="14" />
+      <File FileName="WundergroundAPI/Models/ForecastHourly.cs" Line="1" Column="14" />
+      <File FileName="WundergroundAPI/Models/ForecastHourlyData.cs" Line="1" Column="14" />
+      <File FileName="WundergroundAPI/Models/Response.cs" Line="2" Column="34" />
+      <File FileName="WundergroundAPI/Models/SimpleForecast.cs" Line="1" Column="14" />
+      <File FileName="WundergroundAPI/Models/SimpleForecastDay.cs" Line="1" Column="14" />
+      <File FileName="WundergroundAPI/Models/TemperatureCF.cs" Line="1" Column="14" />
+      <File FileName="WundergroundAPI/Models/TxtForecast.cs" Line="1" Column="14" />
+      <File FileName="WundergroundAPI/Models/TemperatureEM.cs" Line="1" Column="14" />
+      <File FileName="WundergroundAPI/Models/Wind.cs" Line="1" Column="14" />
+      <File FileName="WundergroundAPI/Utilities/RestRequest.cs" Line="2" Column="18" />
+      <File FileName="WundergroundAPI/Utilities/EpochConverter.cs" Line="2" Column="1" />
+      <File FileName="WundergroundAPI/Utilities/DoubleConverter.cs" Line="2" Column="23" />
+      <File FileName="WundergroundAPI/Utilities/BoolConverter.cs" Line="1" Column="1" />
+      <File FileName="TestConsole/Program.cs" Line="1" Column="14" />
+      <File FileName="WundergroundAPI/Models/ForecastDay.cs" Line="1" Column="14" />
+      <File FileName="TestConsole/App.config" Line="1" Column="1" />
+      <File FileName="TestConsole/Properties/AssemblyInfo.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

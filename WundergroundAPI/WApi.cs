@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using CGurus.Weather.WundergroundAPI.Models;
 using CGurus.Weather.WundergroundAPI.Utilities;
 
@@ -58,11 +54,49 @@ namespace CGurus.Weather.WundergroundAPI
             return RestRequest.Execute<ForecastHourlyData>(uri);
         }
 
+		public AlertData GetAlerts(string State, string City, string Language)
+		{
+			ValidateState(State);
+
+			//Example: http://api.wunderground.com/api/{API_Key}/alerts/lang:FR/q/IA/Des_Moines.json
+			string uri = string.Format("{0}/{1}/alerts/lang:{2}/q/{3}/{4}.json", _baseUrl, _apiKey, Language, State, City.Replace(" ", "_"));
+
+			return RestRequest.Execute<AlertData>(uri);
+		}
+
+		public ForecastData GetForecast(string State, string City, string Language)
+		{
+			ValidateState(State);
+
+			//Example: http://api.wunderground.com/api/{API_Key}/forecast/lang:FR/q/CA/San_Francisco.json
+			string uri = string.Format("{0}/{1}/forecast/lang:{2}/q/{3}/{4}.json", _baseUrl, _apiKey, Language, State, City.Replace(" ", "_"));
+
+			return RestRequest.Execute<ForecastData>(uri);
+		}
+
+		public ForecastData GetForecast10Day(string State, string City, string Language)
+		{
+			ValidateState(State);
+
+			//Example: http://api.wunderground.com/api/{API_Key}/forecast10day/lang:FR/q/CA/San_Francisco.json
+			string uri = string.Format("{0}/{1}/forecast10day/lang:{2}/q/{3}/{4}.json", _baseUrl, _apiKey, Language, State, City.Replace(" ", "_"));
+
+			return RestRequest.Execute<ForecastData>(uri);
+		}
+
+		public ForecastHourlyData GetForecastHourly(string State, string City, string Language)
+		{
+			ValidateState(State);
+
+			//Example: http://api.wunderground.com/api/{API_Key}/hourly/lang:FR/q/CA/San_Francisco.json
+			string uri = string.Format("{0}/{1}/hourly/lang:{2}/q/{3}/{4}.json", _baseUrl, _apiKey, Language, State, City.Replace(" ", "_"));
+
+			return RestRequest.Execute<ForecastHourlyData>(uri);
+		}
 
         private void ValidateState(string State)
         {
             if (State.Length > 2) { throw new ArgumentException("State must be a two character abbreviation."); }
         }
-
     }
 }

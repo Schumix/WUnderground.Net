@@ -96,7 +96,7 @@ namespace CGurus.Weather.WundergroundAPI
 
         private void ValidateState(string State)
         {
-            if (State.Length > 2) { throw new ArgumentException("State must be a two character abbreviation."); }
+			//if (State.Length > 2) { throw new ArgumentException("State must be a two character abbreviation."); }
         }
     }
 }

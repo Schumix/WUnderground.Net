@@ -68,4 +68,10 @@
   <Target Name="AfterBuild">
   </Target>
   -->
+  <ItemGroup>
+    <ProjectReference Include="..\External\Newtonsoft.Json\Src\Newtonsoft.Json\Newtonsoft.Json.Schumix.csproj">
+      <Project>{A9AE40FF-1A21-414A-9FE7-3BE13644CC6D}</Project>
+      <Name>Newtonsoft.Json.Schumix</Name>
+    </ProjectReference>
+  </ItemGroup>
 </Project>

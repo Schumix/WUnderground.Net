@@ -11,7 +11,7 @@ ASSEMBLY_MDB = $(ASSEMBLY).mdb
 COMPILE_TARGET = library
 PROJECT_REFERENCES =  \
 	../External/Newtonsoft.Json/Src/Newtonsoft.Json/bin/Debug/Schumix/Newtonsoft.Json.dll
-BUILD_DIR = bin/Debug/
+BUILD_DIR = bin/Debug
 
 CGURUS_WEATHER_WUNDERGROUNDAPI_DLL_MDB_SOURCE=bin/Debug/CGurus.Weather.WundergroundAPI.dll.mdb
 CGURUS_WEATHER_WUNDERGROUNDAPI_DLL_MDB=$(BUILD_DIR)/CGurus.Weather.WundergroundAPI.dll.mdb
@@ -29,7 +29,7 @@ ASSEMBLY_MDB =
 COMPILE_TARGET = library
 PROJECT_REFERENCES =  \
 	../External/Newtonsoft.Json/Src/Newtonsoft.Json/bin/Release/Schumix/Newtonsoft.Json.dll
-BUILD_DIR = bin/Release/
+BUILD_DIR = bin/Release
 
 CGURUS_WEATHER_WUNDERGROUNDAPI_DLL_MDB=
 NEWTONSOFT_JSON_DLL_SOURCE=../External/Newtonsoft.Json/Src/Newtonsoft.Json/bin/Release/Schumix/Newtonsoft.Json.dll

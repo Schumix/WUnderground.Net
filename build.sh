@@ -1,5 +1,7 @@
 #!/bin/bash
 
+git submodule update --init --recursive
+
 build_conf="$(echo "$1" | tr [:upper:] [:lower:])"
 
 if [ "$2" = "" ]; then

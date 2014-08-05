@@ -2,7 +2,7 @@
 using WundergroundAPI.Models;
 using WundergroundAPI.Utilities;
 
-namespace  WundergroundAPI
+namespace WundergroundAPI
 {
 	public class WApi
 	{

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace CGurus.Weather.WundergroundAPI.Models
+namespace WundergroundAPI.Models
 {
 	public class SimpleForecast
 	{

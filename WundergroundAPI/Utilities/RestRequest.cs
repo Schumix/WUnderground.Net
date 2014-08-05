@@ -3,7 +3,7 @@ using System.Net;
 using System.Text;
 using Newtonsoft.Json;
 
-namespace CGurus.Weather.WundergroundAPI.Utilities
+namespace WundergroundAPI.Utilities
 {
 	internal class RestRequest
 	{

@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Creative Gurus, LLC")]
 [assembly: AssemblyProduct("WundergroundAPI")]
-[assembly: AssemblyCopyright("Copyright ©  2013 Creative Gurus, LLC")]
+[assembly: AssemblyCopyright("Copyright © 2013 Creative Gurus, LLC")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

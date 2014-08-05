@@ -1,7 +1,7 @@
 ﻿using System;
 using Newtonsoft.Json;
 
-namespace CGurus.Weather.WundergroundAPI.Utilities
+namespace WundergroundAPI.Utilities
 {
 	internal class BoolConverter : JsonConverter
 	{

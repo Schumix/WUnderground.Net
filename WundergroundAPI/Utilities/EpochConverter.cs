@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace CGurus.Weather.WundergroundAPI.Utilities
+namespace WundergroundAPI.Utilities
 {
 	internal class EpochConverter
 	{

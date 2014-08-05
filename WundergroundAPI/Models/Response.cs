@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace CGurus.Weather.WundergroundAPI.Models
+namespace WundergroundAPI.Models
 {
 	public class Response
 	{

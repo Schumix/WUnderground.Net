@@ -1,13 +1,13 @@
 ﻿using System;
-using CGurus.Weather.WundergroundAPI.Models;
-using CGurus.Weather.WundergroundAPI.Utilities;
+using WundergroundAPI.Models;
+using WundergroundAPI.Utilities;
 
-namespace CGurus.Weather.WundergroundAPI
+namespace  WundergroundAPI
 {
 	public class WApi
 	{
-		private string _apiKey { get; set; }
 		private const string _baseUrl = "http://api.wunderground.com/api";
+		private string _apiKey { get; set; }
 
 		public WApi(string ApiKey)
 		{
@@ -20,7 +20,6 @@ namespace CGurus.Weather.WundergroundAPI
 
 			//Example: http://api.wunderground.com/api/{API_Key}/alerts/q/IA/Des_Moines.json
 			string uri = string.Format("{0}/{1}/alerts/q/{2}/{3}.json", _baseUrl, _apiKey, State, City.Replace(" ", "_"));
-
 			return RestRequest.Execute<AlertData>(uri);
 		}
 
@@ -30,7 +29,6 @@ namespace CGurus.Weather.WundergroundAPI
 
 			//Example: http://api.wunderground.com/api/{API_Key}/forecast/q/CA/San_Francisco.json
 			string uri = string.Format("{0}/{1}/forecast/q/{2}/{3}.json", _baseUrl, _apiKey, State, City.Replace(" ", "_"));
-
 			return RestRequest.Execute<ForecastData>(uri);
 		}
 
@@ -40,7 +38,6 @@ namespace CGurus.Weather.WundergroundAPI
 
 			//Example: http://api.wunderground.com/api/{API_Key}/forecast10day/q/CA/San_Francisco.json
 			string uri = string.Format("{0}/{1}/forecast10day/q/{2}/{3}.json", _baseUrl, _apiKey, State, City.Replace(" ", "_"));
-
 			return RestRequest.Execute<ForecastData>(uri);
 		}
 
@@ -50,7 +47,6 @@ namespace CGurus.Weather.WundergroundAPI
 
 			//Example: http://api.wunderground.com/api/{API_Key}/hourly/q/CA/San_Francisco.json
 			string uri = string.Format("{0}/{1}/hourly/q/{2}/{3}.json", _baseUrl, _apiKey, State, City.Replace(" ", "_"));
-
 			return RestRequest.Execute<ForecastHourlyData>(uri);
 		}
 
@@ -60,7 +56,6 @@ namespace CGurus.Weather.WundergroundAPI
 
 			//Example: http://api.wunderground.com/api/{API_Key}/alerts/lang:FR/q/IA/Des_Moines.json
 			string uri = string.Format("{0}/{1}/alerts/lang:{2}/q/{3}/{4}.json", _baseUrl, _apiKey, Language, State, City.Replace(" ", "_"));
-
 			return RestRequest.Execute<AlertData>(uri);
 		}
 
@@ -70,7 +65,6 @@ namespace CGurus.Weather.WundergroundAPI
 
 			//Example: http://api.wunderground.com/api/{API_Key}/forecast/lang:FR/q/CA/San_Francisco.json
 			string uri = string.Format("{0}/{1}/forecast/lang:{2}/q/{3}/{4}.json", _baseUrl, _apiKey, Language, State, City.Replace(" ", "_"));
-
 			return RestRequest.Execute<ForecastData>(uri);
 		}
 
@@ -80,7 +74,6 @@ namespace CGurus.Weather.WundergroundAPI
 
 			//Example: http://api.wunderground.com/api/{API_Key}/forecast10day/lang:FR/q/CA/San_Francisco.json
 			string uri = string.Format("{0}/{1}/forecast10day/lang:{2}/q/{3}/{4}.json", _baseUrl, _apiKey, Language, State, City.Replace(" ", "_"));
-
 			return RestRequest.Execute<ForecastData>(uri);
 		}
 
@@ -90,7 +83,6 @@ namespace CGurus.Weather.WundergroundAPI
 
 			//Example: http://api.wunderground.com/api/{API_Key}/hourly/lang:FR/q/CA/San_Francisco.json
 			string uri = string.Format("{0}/{1}/hourly/lang:{2}/q/{3}/{4}.json", _baseUrl, _apiKey, Language, State, City.Replace(" ", "_"));
-
 			return RestRequest.Execute<ForecastHourlyData>(uri);
 		}
 

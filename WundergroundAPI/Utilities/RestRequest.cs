@@ -5,12 +5,12 @@ using Newtonsoft.Json;
 
 namespace CGurus.Weather.WundergroundAPI.Utilities
 {
-    internal class RestRequest
-    {
-        internal static T Execute<T>(string Uri) where T : new()
-        {
+	internal class RestRequest
+	{
+		internal static T Execute<T>(string Uri) where T : new()
+		{
 			return JsonConvert.DeserializeObject<T>(GetUrl(Uri), new Utilities.BoolConverter(), new Utilities.DoubleConverter());
-        }
+		}
 
 		internal static string GetUrl(string url)
 		{
@@ -37,5 +37,5 @@ namespace CGurus.Weather.WundergroundAPI.Utilities
 
 			return sb.ToString();
 		}
-    }
+	}
 }

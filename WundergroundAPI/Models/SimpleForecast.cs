@@ -2,8 +2,8 @@
 
 namespace CGurus.Weather.WundergroundAPI.Models
 {
-    public class SimpleForecast
-    {
-        public SimpleForecastDay[] ForecastDay { get; set; }
-    }
+	public class SimpleForecast
+	{
+		public SimpleForecastDay[] ForecastDay { get; set; }
+	}
 }

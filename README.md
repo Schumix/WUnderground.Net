@@ -1,4 +1,4 @@
-#Weather Underground .Net API (Also Weather.com) [![Build Status](https://travis-ci.org/Schumix/WUnderground.Net.png?branch=master)](https://travis-ci.org/Schumix/WUnderground.Net)
+#Weather Underground .Net API (Also Weather.com) [![Build Status](https://travis-ci.org/Schumix/WUnderground.Net.svg?branch=master)](https://travis-ci.org/Schumix/WUnderground.Net)
 
 This library implements the forecast features of the Wunderground.com Weather API.
 
